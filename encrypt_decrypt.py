@@ -10,8 +10,9 @@ def encrypt_decrypt(texts, shift_amount=2):
     return result
 
 
-text = input("Enter Text to encrypt or decrypt: ")
+if __name__ == "__main__":
+    text = input("Enter Text to encrypt or decrypt: ")
 
-action = encrypt_decrypt(texts=text)
+    action = encrypt_decrypt(texts=text)
 
-print(f"result: {action}")
+    print(f"result: {action}")
